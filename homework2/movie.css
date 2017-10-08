@@ -1,0 +1,142 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("source/background.png");
+    background-repeat: repeat;
+    font-family: Verdana, Tahoma, sans-serif
+}
+
+.skeleton {
+    width: auto;
+}
+
+.header img {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, sans-serif; 
+}
+
+.content {
+    width: 800px;
+    margin: 0 auto;
+    border: 4px solid gray;
+    overflow: hidden;
+    position: relative;
+}
+
+.right-part {
+    float: right;
+    width: 250px;
+    background-color: #A2B964;
+}
+
+.left-part {
+    width: 550px;
+    position: relative;
+}
+
+.left-header {
+    background-image: url("source/rottenbackground.png");
+    background-repeat: repeat-x;
+    height: 83px;
+}
+
+.title {
+    font-size: 48pt;
+    font-weight: bold;
+    color: red;
+    vertical-align: bottom;
+}
+
+.num {
+    font-size: 8pt;
+    color: white;
+    line-height: 40px;
+    vertical-align: bottom;
+}
+
+.left-col {
+    display: inline-block;
+    width: 47%;
+    padding: 2% 0 2% 2%;
+}
+
+.right-col {
+    display: inline-block;
+    width: 47%;
+    padding: 2%;
+    position: absolute;
+    top: 83px;
+    left: 49%;
+}
+
+.reviews {
+    margin-bottom: 3em;
+}
+
+.text {
+    border: 2px solid gray;
+    background-color: #E1D697;
+    font-size: 8pt;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.text p {
+    margin: 0;
+}
+
+.text img {
+    margin-right: 5px;
+    float: left;
+}
+
+.author img {
+    margin-right: 5px;
+    float: left;
+}
+
+.author {
+    font-size: 8pt;
+}
+
+.author span {
+    font-style: italic;
+}
+
+dl {
+    font: 8pt Arial, sans-serif;
+    padding: 0 10px 20px 10px;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.bottom {
+    text-align: center;
+    background-color: #A2B964;
+    margin: 0;
+    padding: 5px 0 5px 0;
+    font-size: 8pt;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+}
+
+.link {
+    position: absolute;
+    bottom: -390px;
+    right: 135px;
+}
+
+.link a {
+    text-decoration: none;
+}
