@@ -1,0 +1,75 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: lucida grande;
+}
+
+.container {
+    position: relative;
+    width: 280px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error {
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    min-height: 20px;
+}
+
+.cal {
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+    background-color: #000;
+    padding-top: 60px;
+    border-radius: 13px;
+}
+
+.cal input {
+    background-color: #000;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: right;
+    margin: 0 15px;
+    width: 250px;
+    height: 65px;
+    border: none;
+    outline: none;
+}
+
+td {
+    background-color: #333;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+td:hover {
+    cursor: pointer;
+}
+
+td:active {
+    cursor: pointer;
+}
+
+.grey {
+    background-color: #a6a6a6;
+    color: #000;
+}
+
+.operation {
+    background-color: #fc9326;
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="cal.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="cal.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="error"></div>
+        <div class="cal">
+            <input type="text" value="0" class="show">
+            <table cellspacing="15">
+                <tr>
+                    <td class="grey" onselect="document.selection.empty()">CE</td>
+                    <td class="grey" onselect="document.selection.empty()">(</td>
+                    <td class="grey" onselect="document.selection.empty()">)</td>
+                    <td class="operation" onselect="document.selection.empty()">÷</td>
+                </tr>
+                <tr>
+                    <td onselect="document.selection.empty()">7</td>
+                    <td onselect="document.selection.empty()">8</td>
+                    <td onselect="document.selection.empty()">9</td>
+                    <td class="operation" onselect="document.selection.empty()">×</td>
+                </tr>
+                <tr>
+                    <td onselect="document.selection.empty()">4</td>
+                    <td onselect="document.selection.empty()">5</td>
+                    <td onselect="document.selection.empty()">6</td>
+                    <td class="operation" onselect="document.selection.empty()">-</td>
+                </tr>
+                <tr>
+                    <td onselect="document.selection.empty()">1</td>
+                    <td onselect="document.selection.empty()">2</td>
+                    <td onselect="document.selection.empty()">3</td>
+                    <td class="operation" onselect="document.selection.empty()">+</td>
+                </tr>
+                <tr>
+                    <td onselect="document.selection.empty()">0</td>
+                    <td onselect="document.selection.empty()">.</td>
+                    <td onselect="document.selection.empty()">-></td>
+                    <td class="operation" onselect="document.selection.empty()">=</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
