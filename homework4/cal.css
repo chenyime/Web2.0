@@ -29,11 +29,23 @@ html, body {
     bottom: 70px;
     width: 100%;
     background-color: #000;
-    padding-top: 60px;
+    padding-top: 30px;
     border-radius: 13px;
 }
 
-.cal input {
+.all {
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    text-align: right;
+    margin: 0 15px;
+    width: 250px;
+    height: 30px;
+    border: none;
+    outline: none;
+}
+
+.show {
     background-color: #000;
     color: #fff;
     font-size: 60px;

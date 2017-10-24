@@ -5,27 +5,34 @@ $(document).ready(function() {
     $("td").click(function() {
         let $this = $(this);
         let value = $this.text();
-        if(isNum(value)) {
+        if (isNum(value)) {
             numClick(value);
             $(".show").val(show);
-        } else if(isOper(value)) {
+            $(".all").val(result);
+        } else if (isOper(value)) {
             operClick(value);
-        } else if(value == '=') {
+            $(".all").val(result);
+        } else if (value == '=') {
             getRes();
             $(".show").val(show);
-        } else if(value == "CE") {
+            $(".all").val(result);
+        } else if (value == "CE") {
             result = "0";
             show = "0";
             $(".error").text("");
             $(".show").val(show);
-        } else if(value == "->") {
+            $(".all").val(result);
+        } else if (value == "->") {
             cutStr();
             $(".show").val(show);
-        } else if(value == '.') {
+            $(".all").val(result);
+        } else if (value == '.') {
             addPoint();
             $(".show").val(show);
-        } else if(value == '(' || value == ')') {
+            $(".all").val(result);
+        } else if (value == '(' || value == ')') {
             addBracket(value);
+            $(".all").val(result);
         }
         checkShow();
         console.log(show);
@@ -37,12 +44,12 @@ $(document).ready(function() {
     }
 
     function numClick(value) {
-        if(result[result.length-1] == ")")
+        if (result[result.length-1] == ")")
             return;
-        if(result == "0") {
+        if (result == "0") {
             result = value;
             show = value;
-        } else if(result != "0" && show == "0") {
+        } else if (result != "0" && show == "0") {
             if(value != "0") {
                 show = value;
                 result += value;
@@ -58,11 +65,11 @@ $(document).ready(function() {
     }
 
     function operClick(value) {
-        if(result[result.length-1] == "(") 
+        if (result[result.length-1] == "(") 
             result += "0";
         if (isOper(result[result.length-1]) || result[result.length-1] == '/' || result[result.length-1] == '*')
             result = result.substr(0, result.length-1);
-        if(value == '÷') {
+        if (value == '÷') {
             result += '/';
         } else if(value == '×') {
             result += '*';
@@ -78,7 +85,7 @@ $(document).ready(function() {
            show = String(show);
            result = show;
         }
-       catch(exception) {
+       catch (exception) {
             $(".error").text(exception);
             show = "0";
             result = "0";
@@ -93,17 +100,17 @@ $(document).ready(function() {
             } else {
                 show = "0";
                 result = result.substr(0, result.length-1);
-                if(result == "")
+                if (result == "")
                     result = "0";
             }
         }
     }
 
     function addPoint() {
-        if(result[result.length-1] != "." && result[result.length-1] != ")") {
-            if(show == "0") {
+        if (result[result.length-1] != "." && result[result.length-1] != ")") {
+            if (show == "0") {
                 show += ".";
-                if(result == "0") {
+                if (result == "0") {
                     result += ".";
                 } else {
                     result += "0.";
@@ -116,18 +123,18 @@ $(document).ready(function() {
     }
 
     function addBracket(value) {
-        if(value == "(") {
-            if(result == "0"){
+        if (value == "(") {
+            if (result == "0"){
                 result = "(";
                 return;
-            } else if(isNum(result[result.length-1]) || result[result.length-1] == "." || result[result.length-1] == ")")
+            } else if (isNum(result[result.length-1]) || result[result.length-1] == "." || result[result.length-1] == ")")
                 return;
             result += "(";
             show = "0";
         } else {
-            if(isOper(result[result.length-1]) || result[result.length-1] == "*" || result[result.length-1] == "/") {
+            if (isOper(result[result.length-1]) || result[result.length-1] == "*" || result[result.length-1] == "/") {
                 result += "0)";
-            } else if(isNum(result[result.length-1])) {
+            } else if (isNum(result[result.length-1])) {
                 result += ")";
                 show = "0";
             }
