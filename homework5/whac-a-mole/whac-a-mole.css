@@ -1,0 +1,69 @@
+.whac-a-mole {
+    width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.mole-textarea {
+    height: 150px;
+    width: 100%;
+    text-align: center;
+}
+
+.mole-textarea h1 {
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.bar {
+    width: 45%;
+    height: 50px;
+    margin: 0 auto;
+    position: relative
+}
+
+.control, .status {
+    height: 20px;
+    width: 150px;
+    position: absolute;
+    left: 0;
+}
+
+.status {
+    bottom: 0;
+    height: 15px;
+    width: 100px;
+}
+
+.time-bar, .score-bar {
+    position: absolute;
+    right: 0;
+}
+
+.time, .score {
+    width: 40px;
+}
+
+.score-bar {
+    bottom: 0;
+}
+
+.mole-gamearea {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    width: 233px;
+    padding: 10px;
+    margin: 5px auto 0 auto;
+}
+
+.instruction {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.instruction p {
+    font-weight: bolder;
+    font-size: 15px;
+}

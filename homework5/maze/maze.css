@@ -1,0 +1,107 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.maze {
+    height: 100%;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.maze-textarea {
+    height: 150px;
+    margin: 50px 0 10px 0;
+    text-align: center;
+}
+
+.maze-textarea h1 {
+    font-size: 25px;
+}
+
+.maze-gamearea {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wall {
+    background-color: #c2c2c2;
+    position: absolute;
+}
+
+#wall-2, #wall-3 {
+    top: 46px;
+    height: 170px;
+    width: 120px;
+    border: 1px solid black;
+    border-top: none;
+}
+
+#wall-3 {
+    right: 0;
+}
+
+#wall-1 {
+    top: 0;
+    height: 45px;
+    width: 398px;
+    border: 1px solid black;
+}
+
+#wall-4 {
+    bottom: 0;
+    height: 45px;
+    width: 398px;
+    border: 1px solid black;
+}
+
+#wall-5 {
+    bottom: 46px;
+    left: 160px;
+    height: 170px;
+    width: 75px;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+.start, .end {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    bottom: 49px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.start {
+    left: 0;
+    background-color: green;
+}
+
+.end {
+    right: 0;
+    background-color: blue;
+}
+
+.lose {
+    background-color: red;
+}
+
+.instruction {
+    width: 500px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.example-wall {
+    height: 15px;
+    width: 80px;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: #c2c2c2;
+}
