@@ -7,7 +7,7 @@ $(document).ready(function() {
         $(".wall").each(function() {
             $(this).removeClass("lose");
         })
-        $result.text("");
+        $result.text("Game start!");
         console.log(start);
         console.log(win);
     })
@@ -32,7 +32,7 @@ $(document).ready(function() {
         }
     })
 
-    $(".maze").mouseleave(function() {
+    $(".maze-gamearea").mouseleave(function() {
         if (start) {
             start = false;
         }

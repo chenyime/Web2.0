@@ -27,13 +27,17 @@ $(document).ready(function() {
             num = randomNum(1, 60);
             console.log(num);
         }
+        getFocus();
+        return num;
+    }
+
+    function getFocus() {
         $(".mole").each(function() {
             let $this = $(this);
             if ($this.attr("key") == num.toString()) {
                 $this.focus();
             }
         })
-        return num;
     }
 
     function changeMoleStatus(state) {
@@ -63,14 +67,21 @@ $(document).ready(function() {
             changeMoleStatus(false);
             $(".status").val("Game over");
         } else {
+            console.log(hit);
             status = true;
             time = 30;
+            score = 0;
             n = timer();
+            changeMoleStatus(true);
             getNum();
             hit = false;
-            changeMoleStatus(true);
             $(".status").val("Game start");
+            $(".score").val(score);
         }
+    })
+
+    $(".mole-gamearea").click(function() {
+        getFocus();
     })
 
     $(".mole").click(function() {

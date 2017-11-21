@@ -20,7 +20,7 @@ body {
 }
 
 .maze-gamearea {
-    width: 400px;
+    width: 410px;
     height: 300px;
     margin: 0 auto;
     position: relative;
@@ -39,12 +39,17 @@ body {
     border-top: none;
 }
 
+#wall-2 {
+    left: 5px;
+}
+
 #wall-3 {
-    right: 0;
+    right: 5px;
 }
 
 #wall-1 {
     top: 0;
+    left: 5px;
     height: 45px;
     width: 398px;
     border: 1px solid black;
@@ -52,6 +57,7 @@ body {
 
 #wall-4 {
     bottom: 0;
+    left: 5px;
     height: 45px;
     width: 398px;
     border: 1px solid black;
@@ -59,7 +65,7 @@ body {
 
 #wall-5 {
     bottom: 46px;
-    left: 160px;
+    left: 165px;
     height: 170px;
     width: 75px;
     border: 1px solid black;
@@ -79,12 +85,12 @@ body {
 }
 
 .start {
-    left: 0;
+    left: 5px;
     background-color: green;
 }
 
 .end {
-    right: 0;
+    right: 5px;
     background-color: blue;
 }
 
