@@ -1,0 +1,52 @@
+#todo, #staff {
+  text-align: left;
+  border-collapse:collapse;
+  padding: 0;
+}
+
+thead th {
+  background-color: #061f7d;
+  color: white;
+  position: relative;
+}
+
+th, td {
+  border: 1px solid #d0d0d0;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+#staff th, #staff td {
+  padding-right: 25px;
+}
+
+.alternate {
+  background-color: #eee;
+}
+
+.upOrder {
+  background-image: url("./ascend.png");
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+
+.downOrder {
+  background-image: url("./descend.png");
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+
+.choosen {
+  background-color: #a4b2fa;
+}
+
