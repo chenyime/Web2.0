@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="/public/main.css">
+  <script src="/public/jquery.js"></script>
+  <script src="/public/main.js"></script>
+</head>
+<body>
+  <hgroup>
+    <h1>详情</h1>
+  </hgroup>
+  <form class="form" action="/logout" method="POST">
+    <div class="group">
+      <input type="text" name="username" value="<%=username%>" class="used" disabled><span class="highlight"></span><span class="bar"></span>
+      <label>用户名</label>
+      <p class="err"></p>
+    </div>
+    <div class="group">
+      <input type="text" name="id" value="<%=id%>" class="used" disabled><span class="highlight"></span><span class="bar"></span>
+      <label>学号</label>
+      <p class="err"></p>
+    </div>
+    <div class="group">
+      <input type="text" name="tel" value="<%=tel%>" class="used" disabled><span class="highlight"></span><span class="bar"></span>
+      <label>电话</label>
+      <p class="err"></p>
+    </div>
+    <div class="group">
+      <input type="text" name="mail" value="<%=mail%>" class="used" disabled><span class="highlight"></span><span class="bar"></span>
+      <label>邮箱</label>
+      <p class="err"></p>
+    </div>
+    <button type="submit" class="button buttonBlue reset" id="submit">退出登录
+        <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+    </button>
+  </form>
+</body>
+</html>
