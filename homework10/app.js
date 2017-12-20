@@ -3,6 +3,7 @@ const router = require('./routes');
 const bodyParser=require('body-parser');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
+const MongoStore = require('connect-mongo')(session);
 const app = express();
 
 const port = 3000;
@@ -14,6 +15,9 @@ app.use(session({
   resave: true, // don't save session if unmodified  
   saveUninitialized: false,
   secret: 'signin',
+  store: new MongoStore({
+    url: "mongodb://127.0.0.1:27017/homework",
+  }),
 }))
 app.use('/public', express.static('public'));
 app.use(router);
